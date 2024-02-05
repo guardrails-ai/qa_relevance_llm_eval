@@ -1,7 +1,7 @@
 [project]
-name = "regexmatch"
+name = "qa_relevance_llm_eval"
 version = "0.0.0"
-description = "Template repo for Guardrails Hub validators."
+description = "Validates that an answer is relevant to the question asked by asking the LLM to self evaluate."
 authors = [
     {name = "Guardrails AI", email = "contact@guardrailsai.com"}
 ]
