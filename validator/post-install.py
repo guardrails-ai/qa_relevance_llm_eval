@@ -1,3 +1,4 @@
-print("post-install starting...")
-print("This is where you would do things like download nltk tokenizers or login to the HuggingFace hub...")
-print("post-install complete!")
+import os
+
+# Install the ResponseEvaluator from the hub
+os.system("guardrails hub install hub://guardrails/response_evaluator")
