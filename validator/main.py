@@ -36,7 +36,7 @@ class QARelevanceLLMEval(ResponseEvaluator):  # type: ignore
     ):
         super().__init__(on_fail=on_fail, llm_callable=llm_callable)
 
-    def validate(self, value: Any, metadata: Dict) -> ValidationResult:
+    def validate(self, value: Any, metadata: Dict = {}) -> ValidationResult:
         """Validates that the LLM response is relevant to the given prompt."""
 
         original_prompt = metadata.get("original_prompt", None)
