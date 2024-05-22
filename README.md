@@ -24,7 +24,7 @@ The primary intended uses is for building chatbots, and verifying answer relevan
 ## Installation
 
 ```bash
-guardrails hub install hub://guardrails/qa_relevance_llm_eval
+$ guardrails hub install hub://guardrails/qa_relevance_llm_eval
 ```
 
 ## Usage Examples
