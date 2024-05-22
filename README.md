@@ -1,10 +1,9 @@
 ## Overview
 
 | Developed by | Guardrails AI |
-| --- | --- |
 | Date of development | Feb 15, 2024 |
 | Validator type | Chatbots, QA |
-| Blog | - |
+| Blog |  |
 | License | Apache 2 |
 | Input/Output | Output |
 
@@ -16,9 +15,11 @@ This validator checks whether an answer is relevant to the question asked by ask
 
 The primary intended uses is for building chatbots, and verifying answer relevance for chatbots.
 
-### Resources required
+### Requirements
 
-* Dependencies: Foundation model access (any LLM provider supported by LiteLLM)
+* Dependencies: 
+    - Foundation model access (any LLM provider supported by LiteLLM)
+    - guardrails-ai>=0.4.0
 
 ## Installation
 
@@ -72,7 +73,7 @@ Output:
 Validation failed for field with errors: The LLM says 'No'. The validation failed.
 ```
 
-## API Reference
+# API Reference
 
 **`__init__(self, llm_callable="gpt-3.5-turbo", on_fail="noop")`**
 <ul>
@@ -110,3 +111,4 @@ Note:
     | `original_prompt` | _str_ | The original prompt the LLM is supposedly responding to. | Yes | None |
 
 </ul>
+
