@@ -1,6 +1,6 @@
 from typing import Any, Callable, Dict, Optional
 
-from guardrails.hub.guardrails.response_evaluator.validator import ResponseEvaluator
+from guardrails.hub import ResponseEvaluator
 from guardrails.validator_base import (
     ValidationResult,
     register_validator,
